@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #000000;
+  --texto: #ffffff;
+  --projeto-text: #000000;
+  --projeto-back: #ffffff;
+}
+
+.dark {
+  --background: #ffffff;
+  --texto: #000000;
+  --projeto-text: #ffffff;
+  --projeto-back: #14153f;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--texto);
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+nav {
+  color: var(--texto);
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  transition: background-color 0.4s ease, color 0.4s ease;
+
+  & button {
+    font-size: 23px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--nav-texto);
+    transition: opacity 0.3s ease;
+  }
+
+  & button:hover {
+    opacity: 0.6;
+  }
+
+  & h1 {
+    justify-self: start;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  & div {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    gap: 30px;
+
+    & a {
+      padding: 6px;
+      text-decoration: none;
+      color: var(--texto);
+      transition: color 0.4s ease, transform 0.3s ease;
+    }
+
+    & a:hover {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+main {
+  padding-top: 70px;
+
+  & section {
+    align-items: center;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    color: var(--texto);
+
+  }
+}
+
+.imagem{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#Sobre{
+  display: block;
+  padding: 250px;
+}
+
+#Sobre div{
+  display: flex;
+  gap: 200px;
+}
+
+#Sobre h1{
+  font-size: 80px;
+}
+
+#Sobre b{
+  font-size: large;
+}
+
+#Skills, #Aprendizado{
+  display: block;
+  justify-items: center;
+  font-size: 25px;
+  list-style: none;
+  
+  &h1{
+    text-align: center;
+  }
+
+  & ul {
+    list-style: none;
+  padding: 0;
+  }
+}
+
+#Projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 70px;
+  padding: 60px;
+  background-color: black;
+}
+
+#Projetos div {
+  position: relative; /* referência para posicionamento do span */
+  display: inline-block;
+  align-self: center;
+  width: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  border-radius: 4%;
+  color: var(--projeto-text);
+}
+
+#Projetos div span {
+  position: absolute;
+  bottom: 10px; /* distância do fundo */
+  left: 5px;   /* distância da esquerda */
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px 8px;
+  width: 450%;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: opacity 1s ease;
+}
+
+#Projetos div a{
+  text-decoration: none;
+  border: solid 1px rgb(255, 94, 0);
+  padding: 5px;
+  background-color: rgb(255, 94, 0);
+  border-radius: 8px;
+  color: white;
+}
+
+#Projetos div a:hover{
+  background-color: rgb(194, 71, 0);
+  border: solid 1px rgb(194, 71, 0);
+}
+
+#Projetos div:hover span {
+  opacity: 1;
+}
+
+#Projetos img {
+  width: 500%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+#Projetos div:hover {
+  transform-origin: bottom right;
+  transition: opacity 1s ease;
+  transform: scale(1.2);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  margin-top: 2rem;
+  color: var(--texto);
+  font-size: large;
+  transition: background-color 0.4s ease, color 0.4s ease;
+
+  & p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  & p:hover {
+    transform: translateY(-3px);
+  }
+
+  & p img {
+  width: 20px;
+  height: auto;
+  transition: transform 0.3s ease;
+  background-color: none;
+  }
+
+  & p a {
+  text-decoration: none;
+  color: var(--texto);
+  transition: color 0.3s ease;
+  }
+
+  & p.copyright {
+  justify-content: center;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+  padding: 10px;
+  width: 95%;
+}
+
+main {
+  padding-top: 100px;
+
+  & section {
+    padding: 20px;
+  }
+}
+
+.imagem{
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+#Sobre{
+  width: 90%;
+  display: block;
+  padding: 10px;
+}
+
+#Sobre div{
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#Sobre h1{
+  font-size: 30px;
+}
+
+#Sobre b{
+  font-size: small;
+}
+
+#Skills, #Aprendizado{
+  display: block;
+  justify-items: center;
+  font-size: 15px;
+  list-style: none;
+  
+  &h1{
+    text-align: center;
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+#Projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: black;
+}
+
+#Projetos div {
+  position: relative; /* referência para posicionamento do span */
+  display: inline-block;
+  align-self: center;
+  width: 20%;
+  flex-direction: column;
+  justify-content: center;  
+  border-radius: 4%;
+  color: var(--projeto-text);
+}
+
+#Projetos div span {
+  position: absolute;
+  bottom: 10px; /* distância do fundo */
+  left: 5px;   /* distância da esquerda */
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px 8px;
+  width: 200%;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: opacity 1s ease;
+}
+
+#Projetos img {
+  width: 300%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+}
