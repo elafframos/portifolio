@@ -42,7 +42,7 @@ function Home() {
           
           <div>
             <p>
-              <h1>Bem vindo.</h1> <br />
+              <h2>Bem-vindo.</h2> <br />
               <b>
                 Sou um desenvolvedor em formação com mais de 1 ano de experiência em HTML, CSS e JavaScript. 
                 Tenho conhecimento em Python com Django, estou aprendendo React.js e desenvolvendo projetos 
@@ -95,7 +95,7 @@ function Home() {
 
               <h4>Login do Instagram</h4> <br />
               <p>
-                Clone da tela de login do Instagram com HTML e CSS. Layout responsivo.
+                Clone da tela de login do Instagram com HTML e CSS.
               </p>
               <br />
               <a href="https://elafframos.github.io/instagram-login/" target="_blank" rel="noopener noreferrer">View</a>
@@ -107,14 +107,12 @@ function Home() {
           <div>
             <img src="/images/qrcode.png" alt="" id='foto'/>
             <span>
-
               <h4>Qr Code</h4> <br />
               <p>
-                Gerador de Qrcode com HTML, CSS e JavaScript.
+                Gerador de Qrcode com HTML, CSS e JavaScript. a
               </p>
               <br />
               <a href="https://elafframos.github.io/Gerador-de-Qrcode/" target="_blank" rel="noopener noreferrer">View</a>
-
             </span>
 
           </div>
@@ -123,13 +121,12 @@ function Home() {
             <img src="/images/cadastro.png" alt="" id='foto'/>
             <span>
 
-              <h4>Cadastro</h4> <br />
+              <h4>Formulário</h4> <br />
               <p>
-                Cadastro onde o usúario coloca o cep, e o site autocompleta com HTML, CSS e JavaScript.
+                Formulário utilizando HTML, CSS e JavaScript.
               </p>
               <br />
-              <a href="https://elafframos.github.io/cadastro-com-cep/" target="_blank" rel="noopener noreferrer">View</a>
-
+              <a href="https://elafframos.github.io/cadastro-com-cep/" target="_blank" rel="noopener noreferrer">View</a> 
             </span>
 
           </div>
@@ -140,8 +137,7 @@ function Home() {
 
               <h4>Clima</h4> <br />
               <p>
-                Site onde o usuário digita uma cidade, e será mostrado o a situação climatica da cidade, 
-                com HTML, CSS e JavaScript
+                Site de previsão do tempo com HTML, CSS e JavaScript.
               </p>
               <br />
               <a href="https://elafframos.github.io/Clima/" target="_blank" rel="noopener noreferrer">View</a>
@@ -156,7 +152,7 @@ function Home() {
 
               <h4>Consulta de Endereço</h4> <br />
               <p>
-                Aplicação onde o usuário digitao seu cep, e ele mostrará a rua, bairro, cidade e DD, com HTML, CSS e Javascript.
+                Busca de endereço pelo Cep, com HTML, CSS e Javascript.
               </p>
               <br />
               <a href="https://elafframos.github.io/Consultas-de-CEP/" target="_blank" rel="noopener noreferrer">View</a>

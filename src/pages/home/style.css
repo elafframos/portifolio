@@ -101,8 +101,8 @@ main {
   gap: 200px;
 }
 
-#Sobre h1{
-  font-size: 80px;
+#Sobre h2{
+  font-size: 50px;
 }
 
 #Sobre b{
@@ -176,7 +176,7 @@ main {
   border: solid 1px rgb(194, 71, 0);
 }
 
-#Projetos div:hover span {
+#Projetos div span {
   opacity: 1;
 }
 
