@@ -28,6 +28,7 @@ function Home() {
 
   return (
     <>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></link>
       <nav>
         <h1>Élaff Ramos</h1>
         <div>
@@ -98,8 +99,10 @@ function Home() {
                 Clone da tela de login do Instagram com HTML e CSS.
               </p>
               <br />
-              <a href="https://elafframos.github.io/instagram-login/" target="_blank" rel="noopener noreferrer">View</a>
-
+              <p id='informacao'>
+                <a href="https://elafframos.github.io/instagram-login/" target="_blank" rel="noopener noreferrer">View</a>
+                <i class="fa-solid fa-circle-info"></i>
+              </p>
             </span>
 
           </div>
@@ -109,10 +112,14 @@ function Home() {
             <span>
               <h4>Qr Code</h4> <br />
               <p>
-                Gerador de Qrcode com HTML, CSS e JavaScript. a
+                Gerador de Qrcode com HTML, CSS e JavaScript. 
               </p>
               <br />
-              <a href="https://elafframos.github.io/Gerador-de-Qrcode/" target="_blank" rel="noopener noreferrer">View</a>
+              <p id='informacao'>
+                <a href="https://elafframos.github.io/qr-code-generator/" target="_blank" rel="noopener noreferrer">View</a>
+                <i class="fa-solid fa-circle-info"></i>
+              </p>
+              
             </span>
 
           </div>
@@ -126,7 +133,10 @@ function Home() {
                 Formulário utilizando HTML, CSS e JavaScript.
               </p>
               <br />
-              <a href="https://elafframos.github.io/cadastro-com-cep/" target="_blank" rel="noopener noreferrer">View</a> 
+              <p id='informacao'>
+                <a href="https://elafframos.github.io/Formulario-de-cadastro/" target="_blank" rel="noopener noreferrer">View</a>
+                <i class="fa-solid fa-circle-info"></i>
+              </p>
             </span>
 
           </div>
@@ -140,8 +150,10 @@ function Home() {
                 Site de previsão do tempo com HTML, CSS e JavaScript.
               </p>
               <br />
-              <a href="https://elafframos.github.io/Clima/" target="_blank" rel="noopener noreferrer">View</a>
-
+              <p id='informacao'>
+                <a href="https://elafframos.github.io/Previsao-do-tempo/" target="_blank" rel="noopener noreferrer">View</a>
+                <i class="fa-solid fa-circle-info"></i>
+              </p>
             </span>
 
           </div>   
@@ -155,8 +167,10 @@ function Home() {
                 Busca de endereço pelo Cep, com HTML, CSS e Javascript.
               </p>
               <br />
-              <a href="https://elafframos.github.io/Consultas-de-CEP/" target="_blank" rel="noopener noreferrer">View</a>
-
+              <p id='informacao'>
+                <a href="https://elafframos.github.io/Busca-de-cep/" target="_blank" rel="noopener noreferrer">View</a>
+                <i class="fa-solid fa-circle-info"></i>
+              </p>
             </span>
 
           </div>

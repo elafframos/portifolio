@@ -86,6 +86,21 @@ main {
   }
 }
 
+i{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+i:hover{
+  color: rgb(255, 94, 0);
+}
+
+#informacao{
+  display: flex;
+  align-items: center;
+  gap: 70%;
+}
+
 .imagem{
   width: 100%;
   border-radius: 10px;
