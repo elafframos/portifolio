@@ -21,6 +21,28 @@ function Projects(){
                     </div>
                 </div>
             </section>
+
+            <br /> <br /> <br /> <br /> <br />
+
+            <section class="projeto-card">
+                <img src="../images/trello.png" alt="" />
+                
+                <div class="projeto-info">
+                    <h3>MovieApp</h3>
+                    <p>Catálogo interativo com busca e categorias consumindo API externa.</p>
+                    
+                    <div class="tags">
+                    <span>JavaScript</span>
+                    <span>Django</span>
+                    <span>CSS3</span>
+                    </div>
+
+                    <div class="projeto-links">
+                    <a href="https://trello-gg4h.onrender.com/tarefa/" target="_blank" class="btn-primary">Ver Projeto</a>
+                    <a href="https://github.com/elafframos" target="_blank" class="btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </section>
         </div>
     )
    
