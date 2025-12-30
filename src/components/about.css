@@ -1,0 +1,51 @@
+#Sobre{
+  display: block;
+  padding: 310px;
+}
+
+#Sobre div{
+  display: flex;
+  gap: 200px;
+}
+
+#Sobre h2{
+  font-size: 50px;
+}
+
+#Sobre b{
+  font-size: large;
+}
+
+#Skills, #Aprendizado{
+  display: block;
+  justify-items: center;
+  font-size: 25px;
+  list-style: none;
+  
+  & h1{
+    text-align: center;
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+#button-curriculo{
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(255, 81, 0);
+}
+
+#button-curriculo:hover{
+    background-color: rgb(226, 72, 0);
+    transition: transform 0.7s ease;
+    transform: translateY(-5px);
+}
+
+#button-curriculo a{
+  text-decoration: none;
+  color: white;
+}

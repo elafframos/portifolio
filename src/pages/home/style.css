@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #000000;
   --texto: #ffffff;
@@ -78,7 +82,6 @@ main {
 
   & section {
     align-items: center;
-    padding: 40px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     color: var(--texto);
@@ -86,126 +89,119 @@ main {
   }
 }
 
-i{
-  cursor: pointer;
-  font-size: 20px;
-}
-
-i:hover{
-  color: rgb(255, 94, 0);
-}
-
-#informacao{
-  display: flex;
-  align-items: center;
-  gap: 70%;
-}
-
 .imagem{
   width: 100%;
   border-radius: 10px;
 }
 
-#Sobre{
-  display: block;
-  padding: 250px;
-}
-
-#Sobre div{
-  display: flex;
-  gap: 200px;
-}
-
-#Sobre h2{
-  font-size: 50px;
-}
-
-#Sobre b{
-  font-size: large;
-}
-
-#Skills, #Aprendizado{
-  display: block;
-  justify-items: center;
-  font-size: 25px;
-  list-style: none;
-  
-  &h1{
-    text-align: center;
-  }
-
-  & ul {
-    list-style: none;
-  padding: 0;
-  }
-}
-
-#Projetos {
+/* Container que envolve todos os projetos (Grid para organizar) */
+.projetos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 70px;
-  padding: 60px;
-  background-color: black;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
-#Projetos div {
-  position: relative; /* referência para posicionamento do span */
-  display: inline-block;
-  align-self: center;
-  width: 20%;
+/* O Card do Projeto */
+.projeto-card {
+  background-color: #161616; /* Cinza bem escuro para contraste */
+  border: 1px solid #333;    /* Borda sutil */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;  
-  border-radius: 4%;
-  color: var(--projeto-text);
 }
 
-#Projetos div span {
-  position: absolute;
-  bottom: 10px; /* distância do fundo */
-  left: 5px;   /* distância da esquerda */
-  opacity: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 8px 8px;
-  width: 450%;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  transition: opacity 1s ease;
+/* Efeito de flutuar ao passar o mouse */
+.projeto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-color: #555;
 }
 
-#Projetos div a{
-  text-decoration: none;
-  border: solid 1px rgb(255, 94, 0);
-  padding: 5px;
-  background-color: rgb(255, 94, 0);
+/* Imagem do Projeto */
+.projeto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-bottom: 1px solid #333;
+}
+
+/* Conteúdo interno do card */
+.projeto-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.projeto-info h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.projeto-info p {
+  color: #b3b3b3;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* Estilização das Tags (Tecnologias) */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tags span {
+  background-color: #252525;
+  color: #00d4ff; /* Cor de destaque (pode ser a sua favorita) */
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+/* Botões de Ação */
+.projeto-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto; /* Joga os botões para o final do card */
+}
+
+.btn-primary, .btn-outline {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
   border-radius: 8px;
-  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-#Projetos div a:hover{
-  background-color: rgb(194, 71, 0);
-  border: solid 1px rgb(194, 71, 0);
+.btn-primary {
+  background-color: #fff;
+  color: #000;
 }
 
-#Projetos div span {
-  opacity: 1;
+.btn-primary:hover {
+  background-color: #e0e0e0;
 }
 
-#Projetos img {
-  width: 500%;
-  height: auto;
-  border-radius: 10px;
-  display: block;
+.btn-outline {
+  border: 1px solid #444;
+  color: #fff;
 }
 
-#Projetos div:hover {
-  transform-origin: bottom right;
-  transition: opacity 1s ease;
-  transform: scale(1.2);
+.btn-outline:hover {
+  background-color: #222;
+  border-color: #666;
 }
 
 footer {
@@ -253,105 +249,4 @@ footer {
   to {
     opacity: 1;
   }
-}
-
-@media (max-width: 600px) {
-  nav {
-  padding: 10px;
-  width: 95%;
-}
-
-main {
-  padding-top: 100px;
-
-  & section {
-    padding: 20px;
-  }
-}
-
-.imagem{
-  width: 30%;
-  height: 30%;
-  border-radius: 10px;
-}
-
-#Sobre{
-  width: 90%;
-  display: block;
-  padding: 10px;
-}
-
-#Sobre div{
-  justify-items: center;
-  align-items: center;
-  gap: 10px;
-}
-
-#Sobre h1{
-  font-size: 30px;
-}
-
-#Sobre b{
-  font-size: small;
-}
-
-#Skills, #Aprendizado{
-  display: block;
-  justify-items: center;
-  font-size: 15px;
-  list-style: none;
-  
-  &h1{
-    text-align: center;
-  }
-
-  & ul {
-    list-style: none;
-    padding: 0;
-  }
-}
-
-#Projetos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-  padding: 30px;
-  background-color: black;
-}
-
-#Projetos div {
-  position: relative; /* referência para posicionamento do span */
-  display: inline-block;
-  align-self: center;
-  width: 20%;
-  flex-direction: column;
-  justify-content: center;  
-  border-radius: 4%;
-  color: var(--projeto-text);
-}
-
-#Projetos div span {
-  position: absolute;
-  bottom: 10px; /* distância do fundo */
-  left: 5px;   /* distância da esquerda */
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 8px 8px;
-  width: 200%;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  transition: opacity 1s ease;
-}
-
-#Projetos img {
-  width: 300%;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-}
-
 }
