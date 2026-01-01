@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react'
 import './style.css'
-import './phone.css'
 import Projects from '../../components/Projects'
 import About from '../../components/About'
 import Skills from '../../components/Skills'
-import Learn from '../../components/Learn'
+import Contact from '../../components/Contact'
 
 function Home() {
   const [count, setCount] = useState(0)
@@ -40,8 +39,8 @@ function Home() {
           <h1>Élaff Ramos</h1>
           <div>
             <button onClick={Cor}>{iconeTema}</button>
-            <a href="#projects">Projetos</a>
-            <a href="#Contato">Contato</a>
+            <a href="#projects-grid">Projetos</a>
+            <a href="#contato">Contato</a>
           </div>
         </nav>
     </header>
@@ -55,27 +54,27 @@ function Home() {
         {/* Chamando  os Projetos */}
         <Projects />
 
-        <br /> <br />
+        <br /> <br /> <br /> <br /> <br />
 
         {/* Chamando as Habilidades */}
         <Skills />
 
-        <br /> <br />
+        <br /> <br /> <br />
 
         {/* Chamando os Aprendizados */}
-        <Learn />
+        <Contact />
 
       </main>
 
       {/* Créditos */}
-      <footer id='Contato'>
+      <footer className='contato'>
           <p>
           <img src={imagem} alt="" />
           <a href="https://github.com/elafframos" target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
 
-          <p class="copyright">
-          &copy; Élaff Ramos | 2026
+          <p className="copyright">
+          &copy; Todos os direitos reservados | Élaff Ramos 2026
           </p>
 
           <p>

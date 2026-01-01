@@ -1,0 +1,45 @@
+#sec-contact{
+    display: flex;
+    justify-content: center;
+}
+
+#contato{
+    border: solid 1px;
+    padding: 30px;
+    font-size: large;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.contato-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    gap: 40px;
+    color: aliceblue;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+a:hover{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-5px);
+}
+
+.btn-contato{
+    background-color: blue;
+}
+
+.btn-cv{
+    background-color: brown;
+}
+
+@media (max-width: 600px) {
+    
+}
