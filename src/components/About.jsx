@@ -18,7 +18,7 @@ function About(){
                         
                             <br /> <br />
                             
-                            <a href="#projects-grid" id='button-projects'>Ver meus projetos</a>
+                            <a href="#projects-grid" className='' id='button-projects'>Ver meus projetos</a>
             
                         </b>
                     </p>

@@ -133,7 +133,39 @@ footer {
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 455px){
+  nav {
+  padding: 10px;
+
+  & button {
+    font-size: 15px;
+  }
+
+  & button:hover {
+    opacity: 0.6;
+  }
+
+  & h1 {
+    justify-self: start;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  & div {
+    gap: 20px;
+}
+}
+
+  footer {  
+    font-size: 1%;
+
+    & p {
+    font-size: 8px;
+  }
+  }
+}
+
+@media (max-width: 600px){
   footer {
     gap: 40px;
     padding: 20px;
@@ -170,5 +202,5 @@ footer {
     & p.copyright {
     justify-content: center;
     }
-  }
+}
 }

@@ -16,7 +16,7 @@
   font-size: large;
 }
 
-#Skills, #Aprendizado{
+#Skills{
   display: block;
   justify-items: center;
   font-size: 25px;
@@ -47,23 +47,43 @@
     transform: translateY(-5px);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 455px) {
     #Sobre{
-      display: block;
       padding: 30px;
+      gap: 1px;
+
+      & a{
+        width: 100%;
+      }
+
+      & #div-sobre{
+        width: 100%;
+      }
+
+      & h2 {
+        font-size: 9px;
+      }
+
+      & b {
+      font-size: 9px;
+      }
     }
 
     #Sobre div{
       display: flex;
+      justify-content: center;
       align-items: center;
       gap: 20px;
     }
 
-    #Sobre h2{
-      font-size: 20px;
+    .imagem{
+      width: 40%;
+      height: 40%;
     }
+  }
 
-    #Sobre b{
-      font-size: small;
+@media (max-width: 455px) {
+    #Sobre{
+      
     }
 }
