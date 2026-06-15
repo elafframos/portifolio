@@ -2,8 +2,8 @@
 
 > **Personal Developer Portfolio** | Portfólio Pessoal de Desenvolvedor
 
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![Deploy](https://img.shields.io/badge/deploy-vercel-black?logo=vercel)](https://vercel.com/)
 
 ---
@@ -35,9 +35,8 @@
 
 | Camada | Tecnologia |
 |--------|-----------|
+| Framework | React.js |
 | Linguagem | JavaScript ES6+ |
-| Markup | HTML5 |
-| Estilização | CSS3 |
 | Deploy | Vercel |
 | Versionamento | Git & GitHub |
 
@@ -52,8 +51,11 @@ git clone https://github.com/elafframos/portifolio.git
 # Entre na pasta
 cd portifolio
 
-# Abra o arquivo index.html no navegador
-# Não requer servidor — é um projeto frontend puro
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
 ---
