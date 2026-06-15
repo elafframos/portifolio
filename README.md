@@ -1,12 +1,63 @@
-# React + Vite
+# 🗂️ Portfólio — Élaff Ramos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Personal Developer Portfolio** | Portfólio Pessoal de Desenvolvedor
 
-Currently, two official plugins are available:
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![Deploy](https://img.shields.io/badge/deploy-vercel-black?logo=vercel)](https://vercel.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Demo ao vivo | Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 **[portifolio-elafframos.vercel.app](https://portifolio-elafframos.vercel.app)**
+
+---
+
+## 📋 Sobre o projeto | About
+
+**PT-BR:** Portfólio pessoal desenvolvido para apresentar meus principais projetos, habilidades e trajetória como desenvolvedor Full Stack Júnior. Contém cases detalhados dos projetos em produção, stack técnica e formas de contato.
+
+**EN:** Personal portfolio built to showcase my main projects, skills, and journey as a Junior Full Stack Developer. Features detailed case studies of production projects, tech stack overview, and contact information.
+
+---
+
+## ⚡ Destaques | Highlights
+
+- **Projetos em destaque** — cases detalhados com links para demo e repositório
+- **Stack técnica** — visão geral das tecnologias que utilizo
+- **Design responsivo** — adaptado para desktop e mobile
+- **Deploy em produção** — hospedado na Vercel com CI/CD automático
+
+---
+
+## 🛠️ Tecnologias | Tech Stack
+
+| Camada | Tecnologia |
+|--------|-----------|
+| Linguagem | JavaScript ES6+ |
+| Markup | HTML5 |
+| Estilização | CSS3 |
+| Deploy | Vercel |
+| Versionamento | Git & GitHub |
+
+---
+
+## 🚀 Como rodar localmente | How to run locally
+
+```bash
+# Clone o repositório
+git clone https://github.com/elafframos/portifolio.git
+
+# Entre na pasta
+cd portifolio
+
+# Abra o arquivo index.html no navegador
+# Não requer servidor — é um projeto frontend puro
+```
+
+---
+
+## 📬 Contato | Contact
+
+**Élaff Ramos** — [LinkedIn](https://linkedin.com/in/elaff-ramos) · [GitHub](https://github.com/elafframos) · elaff.dev@gmail.com
